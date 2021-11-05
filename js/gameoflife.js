@@ -7,10 +7,10 @@ function seed() {
 }
 
 function same([x, y], [j, k]) {
-    if (arguments[0] === arguments[1]) {
-        return true;
-    }
-    return false;
+    return Array.isArray(a) &&
+        Array.isArray(b) &&
+        a.length === b.length &&
+        a.every((val, index) => val === b[index]);
 }
 
 // The game state to search for `cell` is passed as the `this` value of the function.
