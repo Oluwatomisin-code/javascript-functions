@@ -7,6 +7,8 @@ function seed() {
 }
 
 function same([x, y], [j, k]) {
+    let a = arguments[0];
+    let b = arguments[1];
     return Array.isArray(a) &&
         Array.isArray(b) &&
         a.length === b.length &&
